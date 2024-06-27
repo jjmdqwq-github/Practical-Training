@@ -40,8 +40,6 @@ HTML是网页内容的载体，CSS样式是表现。
 
 ``<div></div>、<p></p>``
 
-![image-20240626223619465](C:\Users\Admin\AppData\Roaming\Typora\typora-user-images\image-20240626223619465.png)
-
 **属性**
 
 HTML标签都拥有自己的属性，属性应该出现在元素的开始标签内部，属性名和属性值通过“=”分割，属性与属性之间通过空格分隔，属性名不区分大小写，属性值区分大小写并且属性值可以使用双引号引起来。
@@ -62,7 +60,7 @@ class：标识一类元素
 
 style 样式
 
-``<div style="color: red;">我是⼀个div</div>``
+``<div style="color: red;">我是一个div</div>``
 
 ### 块级元素
 

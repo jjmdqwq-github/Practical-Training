@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 表单标签 -->
+    <form action="test.php">
+        <!-- fieldset -->
+        <fieldset style="width: 600px; margin: 0 auto;">
+            <legend>注册信息</legend>
+            <!-- 用户名 -->
+            姓名:<input type="text" name="username" placeholder="请输入用户名">
+            <!-- 密码 -->
+            <br>
+            密码:<input type="password" name="pwd" placeholder="请输入密码">
+            <!-- 性别 -->
+            <br>
+            请选择性别:
+            <!-- 将文字与标签进行绑定 -->
+            <label for="man">
+                <input id="man" type="radio" name="gender" value="male">男
+            </label>
+            <label for="woman">
+                <input id="woman" type="radio" name="gender" value="female">女
+            </label>
+            <!-- 兴趣爱好 -->
+            <br>
+            <input type="checkbox" name="hobby" value="bf">篮球
+            <input type="checkbox" name="hobby" value="fb">足球
+            <input type="checkbox" name="hobby" value="tt">乒乓球
+            <!-- 用户头像 -->
+            <br>
+            请选择头像：
+            <input type="file" name="icon">
+            <!-- 提交 -->
+            <br>
+            <input type="submit" value="提交">
+        </fieldset>
+    </form>
+</body>
+
+</html>
