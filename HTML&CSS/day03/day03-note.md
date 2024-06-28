@@ -1,5 +1,7 @@
 # 功能元素
 
+---
+
 ## 列表标签
 
 ### HTML中列表标签的分类
@@ -205,4 +207,65 @@ tfoot作用：指定表格的附加信息
 <input type="submit">
 ```
 
-等，不做过多记录
+7. 重置按钮
+
+```html
+<input type="reset" value="xx">
+```
+
+8. 隐藏域
+
+```html
+<input type="hidden" name="xx" value="xxx">
+```
+
+**- select标签**
+
+用于定义下拉列表
+
+```html
+<select>
+    <optgroup label="分组名称">
+        <option>列表数据</option>
+    </optgroup>
+</select>
+```
+
+**- textarea标签**
+
+定义一个多行输入框
+
+```html
+<textarea></textarea>
+```
+
+**- datalist标签**
+
+给输入框绑定待选项
+
+```html
+<input type="text" list="xxx">
+<datalist id="xxx">
+    <option>xxx</option>
+</datalist>
+```
+
+**- 邮箱** `<input type="email">`
+
+可以自动校验输入的内容是否符合邮箱的格式
+
+**- 域名** `<input type="url">`
+
+可以自动校验输入的内容是否是URL地址
+
+**- 数字** `<input type="number">`
+
+输入框中只能输入数字
+
+**- 时间** `<input type="date">`
+
+可以通过日历来选择时间
+
+**- 颜色** `<input type="color">`
+
+可以通过取色板来选择颜色

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 通配符选择器 */
+        * {
+            /* 外边距清空 */
+            margin: 0;
+        }
+
+        /* 后代选择器 */
+        .div1 p {
+            color: red;
+        }
+
+        /* 子元素选择器 */
+        .div1>p {
+            color: blue;
+        }
+
+        /* 交集选择器 */
+        .div1.div2 {
+            background-color: yellow;
+        }
+
+        /* 并集选择器 */
+        .div1,
+        .div2,
+        .div3,
+        .div4 {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- div.div1>p*3 -->
+    <div class="div1">
+        <p>p1</p>
+        <p>p2</p>
+        <p>p3</p>
+        <div class="div2">
+            <p>p4</p>
+            <p>p5</p>
+            <p>p6</p>
+        </div>
+    </div>
+    <div class="div3">
+        <p>p1</p>
+        <p>p2</p>
+        <p>p3</p>
+        <div class="div4">
+            <p>p4</p>
+            <p>p5</p>
+            <p>p6</p>
+        </div>
+    </div>
+</body>
+
+</html>

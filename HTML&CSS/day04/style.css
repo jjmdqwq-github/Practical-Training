@@ -1,0 +1,4 @@
+/* 给所有的页面中的所有的div标签设置一个边框 */
+div {
+    border: 3px dashed green;
+}
