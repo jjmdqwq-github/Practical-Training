@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 兄弟选择器 CSS2 */
+        .div1+div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        /* 通用兄弟选择器 CSS3 */
+        .div1~div {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">div1</div>
+    <div class="div2">div2</div>
+    <div class="div3">div3</div>
+    <p>我是p标签</p>
+    <div class="div4">div4</div>
+</body>
+
+</html>

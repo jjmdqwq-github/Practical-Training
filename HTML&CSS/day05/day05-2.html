@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 序选择器 */
+        /* 选中第一个 */
+        div:first-child {
+            width: 100px;
+            height: 100px;
+            background-color: aqua
+        }
+        /* 选中最后一个 */
+        div:last-child  {
+            width: 100px;
+            height: 100px;
+            background-color: green
+        }
+        /* 选中某一个 */
+        div:nth-child(5) {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        /* 选中奇数个 */
+        div:nth-child(odd) {
+            color: green;
+        }
+        /* 选中偶数个 */
+        div:nth-child(even) {
+            color: aqua;
+        }
+        /* 选中自定义 */
+        div:nth-child(2n+1) {
+            font-size: 50px;
+        }
+        /* 鼠标移入时或悬浮时 */
+        .div1:hover {
+            background-color: blue;
+            font-size: 30px;
+        }
+        /* 否定伪类 */
+        /* 除了div7以外其余的标签全部应用对应的样式 */
+        div:not(.div7) {
+            font-family:'Times New Roman', Times, serif
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">div1</div>
+    <div class="div2">div2</div>
+    <div class="div3">div3</div>
+    <div class="div4">div4</div>
+    <div class="div5">div5</div>
+    <div class="div6">div6</div>
+    <div class="div7">div7</div>
+    <div class="div8">div8</div>
+</body>
+
+</html>
