@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 父容器的样式 */
+        .container {
+            width: 1000px;
+            height: 4000px;
+            margin: 0 auto;
+        }
+
+        /* 对所有的div子元素设置样式 */
+        .container div {
+            width: 100%;
+            height: 500px;
+        }
+
+        /* 隔行变色 */
+        .container div:nth-child(odd) {
+            background-color: white;
+        }
+
+        .container div:nth-child(even) {
+            background-color: orange;
+        }
+
+        /* 左侧侧边栏 */
+        .container .left {
+            width: 100px;
+            height: 400px;
+            background-color: red;
+            float: left;
+            margin-left: -150px;
+            /* 粘滞定位 */
+            position: sticky;
+            top: 60px;
+        }
+
+        /* 右侧侧边栏 */
+        .container .right {
+            width: 100px;
+            height: 400px;
+            background-color: red;
+            float: right;
+            margin-right: -150px;
+            /* 粘滞定位 */
+            position: sticky;
+            top: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div></div>
+        <!-- 左边侧边栏 -->
+        <aside class="left"></aside>
+        <!-- 右边侧边栏 -->
+        <aside class="right"></aside>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+
+</html>

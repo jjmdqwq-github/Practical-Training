@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* img {
+            border: 1px solid black;
+        } */
+
+        /* 轮播图区域的样式 */
+        .swiper {
+            width: 1024px;
+            height: 683px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        /* 左箭头的样式 */
+        .swiper img:nth-child(2) {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            margin-top: -32px;
+        }
+        /* 右箭头的样式 */
+        .swiper img:nth-child(3) {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            margin-top: -32px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="swiper">
+        <!-- 图片 -->
+        <img src="./statics/sxnd.jpg" alt="">
+        <!-- 左箭头 -->
+        <img src="./statics/left.png" alt="">
+        <!-- 右箭头 -->
+        <img src="./statics/right.png" alt="">
+    </div>
+</body>
+
+</html>

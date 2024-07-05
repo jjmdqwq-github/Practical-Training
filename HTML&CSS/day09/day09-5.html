@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1, .div3 {
+            width: 300px;
+            height: 300px;
+            border: 1px solid;
+            /* 相对定位 */
+            position: relative;
+        }
+
+        .div3 {
+            z-index: 200;
+        }
+
+        .div2 {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            /* 绝对定位 */
+            position: absolute;
+            top: 300px;
+            left: 300px;
+            z-index: 100;
+        }
+
+        .div4 {
+            width: 150px;
+            height: 150px;
+            background-color: blue;
+            /* 绝对定位 */
+            position: absolute;
+            left: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <div class="div2"></div>
+    </div>
+    <div class="div3">
+        <div class="div4"></div>
+    </div>
+</body>
+
+</html>

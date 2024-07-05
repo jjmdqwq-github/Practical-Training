@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 清楚所有标签自带的样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        /* 父容器的样式 */
+        .container {
+            width: 1400px;
+            height: 1000px;
+            margin: 0 auto;
+        }
+
+        /* 顶部区域的样式 */
+        .container .header {
+            width: 100%;
+            height: 100px;
+            background-color: antiquewhite;
+        }
+
+        /* 内容展示区的样式 */
+        .container .content {
+            width: 100%;
+            background-color: gray;
+            height: 800px;
+        }
+
+        /* 左边区域的样式 */
+        .content .contentLeft {
+            width: 500px;
+            height: 780px;
+            background-color: aqua;
+            float: left;
+            margin: 10px 0 0 10px;
+        }
+
+        /* 右边区域的样式 */
+        .content .contentRight {
+            width: 870px;
+            height: 780px;
+            background-color: greenyellow;
+            float: left;
+            margin: 10px 0 0 10px;
+        }
+
+        /* 右边区域中子元素的样式 */
+        .contentRight div {
+            float: left;
+            width: 276px;
+            height: 375px;
+            background-color: rebeccapurple;
+            margin: 10px 0 0 10px;
+        }
+
+        /* 底部区域的样式 */
+        .container .footer {
+            width: 100%;
+            height: 100px;
+            background-color: red;
+        }
+
+        /* 导航栏的样式 */
+        .header ul {
+            float: right;
+        }
+
+        /* 导航栏子元素的样式 */
+        ul li {
+            float: left;
+            width: 60px;
+            background-color: aqua;
+            text-align: center;
+            margin-left: 10px;
+            line-height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 父容器 -->
+    <div class="container">
+        <!-- 顶部区域 -->
+        <div class="header">
+            <!-- 导航栏 -->
+            <ul>
+                <li>首页</li>
+                <li>食品</li>
+                <li>服装</li>
+                <li>运动</li>
+                <li>关于</li>
+                <li>我的</li>
+            </ul>
+        </div>
+        <!-- 内容展示区 -->
+        <div class="content">
+            <!-- 左边区域 -->
+             <div class="contentLeft"></div>
+            <!-- 右边区域 -->
+             <div class="contentRight">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+             </div>
+        </div>
+        <!-- 底部区域 -->
+        <div class="footer"></div>
+    </div>
+</body>
+
+</html>
